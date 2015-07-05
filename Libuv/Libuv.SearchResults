@@ -1,0 +1,5 @@
+---- uv__async_event Matches (5 in 1 files) ----
+async.c (unix):static void uv__async_event(uv_loop_t* loop,
+async.c (unix):  err = uv__async_start(loop, &loop->async_watcher, uv__async_event);  //uv__async_event : 整个异步回掉的核心函数 
+async.c (unix):static void uv__async_event(uv_loop_t* loop,
+async.c (unix):* uv__async_cb cb : 异步服务的回掉函数(被设置成本地 uv__async_event )
